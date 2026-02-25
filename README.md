@@ -113,6 +113,8 @@ Interactive command-line tool for analyzing test data.
 
 ### Compliance Correction
 
+![Analysis example](images/analysis_example.png)
+
 Raw crosshead displacement includes elastic deformation of the machine frame, load cell, and grips — not just the specimen. This system compliance was characterized by clamping a rigid steel bar and recording the force-displacement response of the machine itself, producing a lookup table that is subtracted from every test:
 
 ```
