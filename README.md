@@ -150,7 +150,7 @@ All tests: 5 mm/min crosshead speed, ~24 °C ambient, ISO 527-2 Type 1BA specime
 
 ### PETG (eSUN)
 
-![PETG stress-strain overlay](images/petg_overlay.jpg)
+![PETG stress-strain overlay](images/petg_overlay.png)
 
 | Specimen | UTS [MPa] | E-Modulus [GPa] | Elongation [%] |
 |---|---|---|---|
@@ -165,7 +165,7 @@ The three stress-strain curves are nearly indistinguishable up to the yield poin
 
 ### PLA (eSUN PLA Basic)
 
-![PLA stress-strain overlay](images/pla_overlay.jpg)
+![PLA stress-strain overlay](images/pla_overlay.png)
 
 | Specimen | UTS [MPa] | E-Modulus [GPa] | Elongation [%] |
 |---|---|---|---|
@@ -180,7 +180,7 @@ UTS is consistent (± 1.1 MPa) but failure mode varied: two specimens fractured 
 
 ### PLA-CF (PolyTerra PLA-CF)
 
-![PLA-CF stress-strain overlay](images/placf_overlay.jpg)
+![PLA-CF stress-strain overlay](images/placf_overlay.png)
 
 | Specimen | UTS [MPa] | E-Modulus [GPa] | Elongation [%] |
 |---|---|---|---|
