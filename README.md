@@ -267,4 +267,3 @@ This result also demonstrates the machine's ability to resolve quality differenc
 
 ---
 
-*Built by [Your Name] — [LinkedIn / email]*
