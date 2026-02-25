@@ -232,12 +232,12 @@ This result also demonstrates the machine's ability to resolve quality differenc
 
 ## Built With
 
-- Arduino Mega 2560
+- Arduino Uno
 - DM542T stepper driver + NEMA 34 motor
 - HX711 + 100 kg load cell
 - ADXL345 accelerometer (SPI)
-- Python 3 (NumPy, Matplotlib, PySerial)
-- FreeCAD
+- Python (NumPy, Matplotlib, PySerial...)
+- Fusion 360
 - 3D-printed structural components
 
 ---
