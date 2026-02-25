@@ -209,31 +209,6 @@ This result also demonstrates the machine's ability to resolve quality differenc
 
 ---
 
-## Repository Structure
-
-```
-├── README.md
-├── firmware/
-│   └── tensile_test.ino
-├── software/
-│   ├── test.py
-│   └── analyze.py
-├── data/
-│   ├── petg/
-│   ├── pla/
-│   └── pla-cf/
-├── calibration/
-│   ├── compliance_lookup.csv
-│   ├── compliance_correction.pdf
-│   └── step_loss_detection.pdf
-├── cad/
-│   └── ...
-├── plots/
-└── docs/
-```
-
----
-
 ## Skills Demonstrated
 
 - **Mechanical design** — frame layout, load path, grip design, ball screw selection
@@ -251,7 +226,7 @@ This result also demonstrates the machine's ability to resolve quality differenc
 - **Wedge grips** — current hex-screw clamping causes wear and is slow to operate. Self-tightening wedge grips would improve usability.
 - **Closed-loop control** — an encoder would eliminate reliance on step loss detection entirely.
 - **Extensometer** — clip-on or video extensometer for direct gauge-section strain measurement, removing dependence on crosshead displacement and compliance correction.
-- **Higher-rate ADC** — the HX711's 10 Hz limits dynamic measurements. A faster ADC would improve capture of fracture events.
+- **Higher-rate ADC** — the HX711's 10 Hz limits dynamic measurements. A faster ADC would improve capture of fracture and step loss events.
 
 ---
 
