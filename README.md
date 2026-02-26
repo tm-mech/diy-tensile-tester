@@ -4,7 +4,10 @@ A custom-built desktop tensile testing machine for characterizing 3D-printed pol
 
 > Personal engineering project bridging mechanical testing, embedded systems, and data analysis.
 
-<!-- 📸 PHOTO: Hero shot of the full machine assembly -->
+<p align="center">
+  <img src="images/machine_overview.jpg" width="270">
+  <img src="images/machine_detail.jpg" width="270">
+</p>
 
 ---
 
@@ -49,23 +52,23 @@ A stepper motor drives a ball screw that pulls the specimen at a controlled disp
 ## System Architecture
 
 ```
-┌──────────────┐     ┌──────────────┐     ┌──────────────┐
-│   Arduino     │────▶│  DM542T      │────▶│  NEMA 34     │
-│   Firmware    │     │  Driver      │     │  Stepper     │
+┌──────────────┐      ┌──────────────┐     ┌──────────────┐
+│   Arduino    │────▶│  DM542T      │────▶│  NEMA 34     │
+│   Firmware   │      │  Driver      │     │  Stepper     │
 │              │◀────│  HX711 ADC   │◀────│  100kg Cell  │
-│              │◀────│  ADXL345     │     │  Accel.      │
-└──────┬───────┘     └──────────────┘     └──────────────┘
+│              │◀────│  ADXL345     │      │  Accel.      │
+└──────┬───────┘      └──────────────┘     └──────────────┘
        │ Serial (115200 baud)
        ▼
 ┌──────────────┐
-│   Python      │
-│   test.py     │──▶ Real-time data logging (.csv)
+│   Python     │
+│   test.py    │──▶ Real-time data logging (.csv)
 └──────┬───────┘
        │
        ▼
 ┌──────────────┐
-│   Python      │
-│   analyze.py  │──▶ Compliance correction
+│   Python     │
+│   analyze.py │──▶ Compliance correction
 │              │──▶ Stress-strain analysis
 │              │──▶ Multi-specimen comparison
 └──────────────┘
@@ -86,7 +89,7 @@ The firmware handles motor control, sensor acquisition, and safety monitoring in
 
 Step loss detection was implemented as a signal processing exercise — in practice the motor operates well within its torque range for the loads tested here. But it demonstrates a useful fault-detection pattern for any open-loop stepper system: rather than adding an encoder, an existing sensor (accelerometer) is repurposed to infer position faults from vibration signatures.
 
-<!-- 📸 PHOTO: Close-up of electronics (Arduino, driver, load cell, accelerometer) -->
+![Machine base with electronics enclosure](images/machine_base.jpg)
 
 → [`firmware/`](firmware/)
 
